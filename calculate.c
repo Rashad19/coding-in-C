@@ -1,10 +1,12 @@
 #include <stdio.h>
 
-
 int main()
 
 {
-	int date, month, year, Age ;
+	int date, month, year, Age,Age1, today,monthtoday,yeartoday, diffmonth1;
+
+	unsigned int diffmonth; 
+
 
 printf("Hello World!\n");
 
@@ -17,10 +19,40 @@ scanf("%i", & year);
 
 printf("Your were born on %i/%i/%i\n", date, month, year );
 
-Age = 2019 - year ;
+monthtoday = 5;
 
-printf("You are %i years old!\n", Age);
+yeartoday = 2020;
 
-return 0;
+diffmonth =  monthtoday - month;
+Age = yeartoday - year ;
+Age1= Age-1;
+diffmonth1 = diffmonth + 12;
+
+if(month == monthtoday) 
+
+{ 
+
+	printf("You are %i years old\n", Age);
+
 
 }
+
+else if (month>monthtoday)  {
+	 
+	 	printf("You are %i years and %i months old \n", Age1,diffmonth1);
+
+}
+
+else
+
+	{
+
+	printf("You are %i and %i months old \n", Age, diffmonth );
+}
+	 
+		return 0;
+
+
+	}
+
+	
