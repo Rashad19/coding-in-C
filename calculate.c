@@ -28,31 +28,23 @@ Age = yeartoday - year ;
 Age1= Age-1;
 diffmonth1 = diffmonth + 12;
 
-if(month == monthtoday) 
-
-{ 
+if(month == monthtoday){ 
 
 	printf("You are %i years old\n", Age);
-
-
 }
 
-else if (month>monthtoday)  {
+else if (month>monthtoday){
 	 
-	 	printf("You are %i years and %i months old \n", Age1,diffmonth1);
-
+	printf("You are %i years and %i months old \n", Age1,diffmonth1);
 }
 
-else
-
-	{
+else{
 
 	printf("You are %i and %i months old \n", Age, diffmonth );
 }
 	 
-		return 0;
+	return 0;
 
-
-	}
+}
 
 	
